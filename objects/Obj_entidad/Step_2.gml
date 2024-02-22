@@ -3,6 +3,4 @@
 
 //ajustando profundidad
 
-depth = -bbox_bottom;
-
-
+depth = (room_height - y);
