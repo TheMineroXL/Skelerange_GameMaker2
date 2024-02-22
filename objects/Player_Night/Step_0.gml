@@ -1,0 +1,2 @@
+	estado();
+	actualizar_mirando();
