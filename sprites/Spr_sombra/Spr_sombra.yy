@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Spr_sombra",
+  "name": "spr_sombra",
   "bbox_bottom": 48,
   "bbox_left": 0,
   "bbox_right": 244,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Colicion",
-    "path": "folders/Sprites/Player/Colicion.yy",
+    "name": "Collisión",
+    "path": "folders/Sprites/Clases de Jugador/Collisión.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Spr_sombra",
+    "name": "spr_sombra",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11b62c9e-6311-431f-8ac4-b3a4845e1f9b","path":"sprites/Spr_sombra/Spr_sombra.yy",},},},"Disabled":false,"id":"a59f8685-aeef-4768-9d88-74213694c2f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11b62c9e-6311-431f-8ac4-b3a4845e1f9b","path":"sprites/spr_sombra/spr_sombra.yy",},},},"Disabled":false,"id":"a59f8685-aeef-4768-9d88-74213694c2f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

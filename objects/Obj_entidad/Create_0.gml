@@ -1,12 +1,10 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Variables importantes
+estados = ds_map_create();
+estado = "estado_idle";
 
 velh = 0;
 velv = 0;
 velz = 0;
 
 face = 1;
-//z
 z = 0;
-
-estado = noone; 

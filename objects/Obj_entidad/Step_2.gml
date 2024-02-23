@@ -1,6 +1,4 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description Profundidad
 
 //ajustando profundidad
-
 depth = (room_height - y);

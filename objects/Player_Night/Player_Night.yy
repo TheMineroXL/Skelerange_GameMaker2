@@ -1,23 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Player_Night",
+  "name": "player_night",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Jugadores_",
-    "path": "folders/Objetos/Players/Jugadores_.yy",
+    "name": "Clases",
+    "path": "folders/Objetos/Players/Clases.yy",
   },
   "parentObjectId": {
-    "name": "Obj_entidad",
-    "path": "objects/Obj_entidad/Obj_entidad.yy",
+    "name": "obj_entidad",
+    "path": "objects/obj_entidad/obj_entidad.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -35,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "N_idle",
-    "path": "sprites/N_idle/N_idle.yy",
+    "name": "spr_n_idle",
+    "path": "sprites/spr_n_idle/spr_n_idle.yy",
   },
   "spriteMaskId": {
     "name": "hitbox",

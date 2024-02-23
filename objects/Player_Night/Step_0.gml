@@ -1,2 +1,2 @@
-	estado();
-	actualizar_mirando();
+estados[? estado]();
+actualizar_mirando();

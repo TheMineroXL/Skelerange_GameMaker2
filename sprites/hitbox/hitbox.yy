@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Colicion",
-    "path": "folders/Sprites/Player/Colicion.yy",
+    "name": "Collisión",
+    "path": "folders/Sprites/Clases de Jugador/Collisión.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
