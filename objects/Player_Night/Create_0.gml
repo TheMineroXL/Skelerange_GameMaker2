@@ -163,6 +163,7 @@ estados[? "estado_ataque"] =  function()
 {	
 	//Parando ataque cuando te muevas
 	velh = 0;
+	velv = 0;
 	
 	var _attack = keyboard_check_pressed(ord("J"));
 	

@@ -1,0 +1,1 @@
+#macro IS_DEBUG (true)

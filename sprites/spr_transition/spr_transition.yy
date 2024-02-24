@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_transition",
-  "bbox_bottom": 562,
-  "bbox_left": 0,
-  "bbox_right": 959,
+  "bbox_bottom": 767,
+  "bbox_left": 21,
+  "bbox_right": 1600,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f4cb396-59a0-473a-84e4-3ff0daeadbbd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b80425d-a03b-41bd-ac9a-1336b6074e38",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 563,
+  "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"faca44b4-53c2-49ff-bf4e-c94223abd595","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9f851a19-407a-479a-b0de-a82cea1d89f3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9f4cb396-59a0-473a-84e4-3ff0daeadbbd","path":"sprites/spr_transition/spr_transition.yy",},},},"Disabled":false,"id":"a6f2e820-94fa-4e19-a9c5-4ad57f031245","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b80425d-a03b-41bd-ac9a-1336b6074e38","path":"sprites/spr_transition/spr_transition.yy",},},},"Disabled":false,"id":"01ad0867-ff9c-467e-af60-1ae30e833576","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 960,
+  "width": 1622,
 }

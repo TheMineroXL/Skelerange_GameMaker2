@@ -1,0 +1,2 @@
+clear("principal")
+clear("modo")
