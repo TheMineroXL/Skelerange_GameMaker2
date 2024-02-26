@@ -4,6 +4,6 @@
 if texto = "play"
 {
 
-room_goto(rm_lvl1)
+room_goto(rm_lvl)
 
 }

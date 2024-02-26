@@ -196,7 +196,7 @@ estados[? "estado_ataque"] =  function()
 		//Tercer ataque
 		if (sprite_index == spr_n_punch && buffer_ataque)
 		{
-			sprite_index = spr_n_kick;
+			sprite_index = spr_n_punch;
 			image_index = 0;
 			buffer_ataque = false;
 		}
@@ -210,7 +210,7 @@ estados[? "estado_ataque"] =  function()
 		buffer_ataque = false;
 	}
 }
-
+ 
 estados[? "ajusta_fundo"] = function()
 {
 	if (sprite_index != spr_n_jump && velz <= 0)
@@ -231,6 +231,11 @@ estados[? "ajusta_fundo"] = function()
 		sprite_index = spr_n_jump;
 	}
 			
+	if (attack)
+	{
+		estado = estado_ataque_ar;
+	}
+	
 	//elevando
 	z += velz; 
 	
@@ -259,10 +264,22 @@ estados[? "ajusta_fundo"] = function()
    layer_y(layer, _y / 4);
 }
 
+estado_ataque_ar = function()
+{
+	if (sprite_index != spr_n_SEX_kick)
+   
+   { 
+	 sprite_index = spr_n_SEX_kick;
+	 image_index = 0;
+    }
+}
+
+
 //estado del jugador
 
 estado = "estado_walk";
 
-actualizar_mirando = function() {
+actualizar_mirando = function()
+{
 	if(velh != 0) mirando = sign(velh);
 }

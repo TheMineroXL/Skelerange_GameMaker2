@@ -78,7 +78,7 @@ function do_button(_estado, _nombre)
 	
 	if (_estado == "modo")
 	{
-		if (_nombre == "Story Mode") room_goto(rm_lvl1);
+		if (_nombre == "Story Mode") room_goto(rm_lvl);
 		exit
 	}
 }
