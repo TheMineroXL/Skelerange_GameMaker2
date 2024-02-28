@@ -4,6 +4,15 @@ siguiente_estado = "principal"
 // Pueden cambiar esto (esta en segundos)
 transition_duration = 0.25
 
+extra = false
+extra_delay = 12
+frames = 0
+
+// cambia esto para ver el clickbox
+debug_menu = false
+
+bg_offset = 0
+
 transition_min = (-sprite_get_width(spr_transition)) - 2
 transition_max = (sprite_get_width(spr_transition)) + 1
 transition_x = transition_min
@@ -25,9 +34,9 @@ estados[? "principal"] = [
 
 // Menu de modos
 estados[? "modo"] = [
-	new MenuButton(206, 186, 252, 415, 0, "Versus Mode"),
-	new MenuButton(504, 186, 252, 415, 1, "Story Mode"),
-	new MenuButton(824, 186, 252, 415, 2, "Lost Levels Mode")
+	new MenuButton(240, 210, 259, 492, 0, "Versus Mode"),
+	new MenuButton(544, 210, 259, 492, 1, "Story Mode"),
+	new MenuButton(872, 210, 259, 492, 2, "Lost Levels Mode")
 ]
 
 /// @function                 clear(_estado_id);
@@ -53,6 +62,19 @@ function cambiar_estado(_siguiente)
 	transition_x = transition_max
 }
 
+function change_button(_to)
+{
+	if (selected_indx == _to) return;
+	
+	audio_play_sound(sfx_select, 0, false, 0.8, 0, 1 - (selected_indx * 0.05))
+	selected_indx = _to
+}
+
+function ding()
+{
+	audio_play_sound(sfx_choice, 0, false, 0.8)
+}
+
 function do_button(_estado, _nombre)
 {
 	var _clicking = false;
@@ -71,14 +93,22 @@ function do_button(_estado, _nombre)
 	
 	if (_estado == "principal")
 	{
-		if (_nombre == "Start") cambiar_estado("modo");
+		if (_nombre == "Start")
+		{
+			ding()
+			cambiar_estado("modo")
+		}
 		if (_nombre == "Exit") game_end();
 		exit
 	}
 	
 	if (_estado == "modo")
 	{
-		if (_nombre == "Story Mode") room_goto(rm_lvl);
+		if (_nombre == "Story Mode")
+		{
+			ding()
+			room_goto(rm_lvl)
+		}
 		exit
 	}
 }

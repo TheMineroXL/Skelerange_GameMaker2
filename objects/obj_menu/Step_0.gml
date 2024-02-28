@@ -1,3 +1,13 @@
+extra_delay -= 1
+bg_offset = (bg_offset + (256 / 120)) % 256
+frames += 1
+
+if (extra_delay < 0)
+{
+	extra = !extra
+	extra_delay = 12
+}
+
 if (transition_x > transition_min)
 {
 	transition_x -= (sprite_get_width(spr_transition) / (60 * transition_duration))
@@ -21,7 +31,7 @@ for (var _i = 0; _i < array_length(_estado_actual); _i += 1)
 	if (_hovering)
 	{
 		is_using_mouse = true
-		selected_indx = _button.index
+		change_button(_button.index)
 	}
 }
 
@@ -31,9 +41,18 @@ if (menu_estado == "principal")
 	_move = (keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up))
 } else {
 	_move = (keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left))
+	
+	if (keyboard_check_pressed(vk_escape))
+	{
+		cambiar_estado("principal")
+	}
 }
 
-selected_indx = ((selected_indx + _move) % array_length(_estado_actual))
+if (_move != 0)
+{
+	change_button((selected_indx + _move) % array_length(_estado_actual))
+}
+
 selected_indx = clamp(selected_indx, 0, array_length(_estado_actual))
 
 // Feather restore GM1041
